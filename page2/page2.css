@@ -20,7 +20,7 @@ body {
 
 .weather {
     height: 30% ;
-    width: 81%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     background-color: #90e0ef;
@@ -35,7 +35,9 @@ body {
     height: 70px;
     gap: 0px;
 }
-
+.temprature {
+    
+}
 
 .cloth-recomendation {
     height: 20%;
@@ -63,7 +65,4 @@ body {
     background-color: #90e0ef;
     border-radius: 50px;
     box-shadow: 5px 5px 5px 5px #48cae4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
