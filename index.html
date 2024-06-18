@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <div class="hero-container">
+      <section>
+        <a href="/"
+          ><img
+            class="logo"
+            src="public/img/wherether_logo.png"
+            alt="logo"
+            width="300px"
+        /></a>
+      </section>
+
+      <main class="search">
+        <h1 class="selector-title">Where in Vancouver do you want to go?</h1>
+
+        <form
+          class="selector-form"
+          id="selector-form"
+        >
+          <select
+            id="places"
+            class="places-list-selector"
+            name="placestogo"
+            required
+          >
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+          </select>
+          <button
+            class="submit-button"
+            id="submit-button"
+          >
+            Let's go!
+          </button>
+        </form>
+      </main>
+    </div>
+
+    <script
+      type="module"
+      src="../scripts/app.js"
+    ></script>
+  </body>
+</html>

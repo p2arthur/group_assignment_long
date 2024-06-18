@@ -1,4 +1,4 @@
-const placesList = [
+export const placesList = [
   {
     name: 'Sunset beach',
     lat: '49.27',
