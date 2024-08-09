@@ -1,11 +1,15 @@
-import { handlePlaceSelectSubmit } from './models/handlePlaceSelectSubmit.js';
+import { handlePlaceSelectSubmit } from "./models/handlePlaceSelectSubmit.js";
 
-const button = window.document.getElementById('submit-button');
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("submit-button");
+  const userSelector = document.getElementById("places-list-selector");
 
-const handleSubmit = (event) => {
-  event.preventDefault();
-  handlePlaceSelectSubmit();
-  window.location.href = '/overview';
-};
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const userSelectedValue = userSelector.value;
+    console.log("userSelected value", userSelectedValue);
+    handlePlaceSelectSubmit(userSelectedValue);
+  };
 
-button.addEventListener('click', handleSubmit);
+  button.addEventListener("click", handleSubmit);
+});
