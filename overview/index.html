@@ -15,13 +15,14 @@
   <body>
     <main class="main-content">
       <section class="left-column">
-        <article class="place-name">
-          <p>2131223111</p>
-        </article>
-        <article class="weather">
-          <figure class="temprature weather-object"></figure>
+        <h2 class="place-name">Loading...</h2>
+        <article class="weather-container">
+          <h3 id="weather-stats-1">Loading...</h3>
+          <h3 id="weather-stats-2">Loading...</h3>
+          <h3 id="weather-stats-3">Loading...</h3>
+          <!-- <figure class="temprature weather-object"></figure>
           <figure class="wind-speed weather-object"></figure>
-          <figure class="prop-of-prec weather-object"></figure>
+          <figure class="prop-of-prec weather-object"></figure> -->
         </article>
         <article class="cloth-recomendation">
           <div>
@@ -41,6 +42,7 @@
             <iframe
               width="700px"
               height="460px"
+              id="location-video"
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
             >
             </iframe>
@@ -48,5 +50,10 @@
         </div>
       </section>
     </main>
+
+    <script
+      type="module"
+      src="overview.js"
+    ></script>
   </body>
 </html>
