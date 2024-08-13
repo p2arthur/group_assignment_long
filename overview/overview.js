@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.log("weaterData", weatherData);
 
     titleElement.textContent = selectedLocation.name;
-    weatherStats1.textContent = `${weatherData.current.apparent_temperature}°C`;
+    weatherStats1.textContent = `${weatherData.current?.apparent_temperature}°C`;
     weatherStats2.textContent = `${weatherData.current.wind_speed_10m}KM/H`;
     locationVideo.setAttribute("src", selectedLocation.video_url);
   } else {
