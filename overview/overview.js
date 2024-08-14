@@ -22,7 +22,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     titleElement.textContent = selectedLocation.name;
     weatherStats1.textContent = `${weatherData.current?.apparent_temperature}°C`;
     weatherStats2.textContent = `${weatherData.current.wind_speed_10m}KM/H`;
-    locationVideo.setAttribute("src", selectedLocation.video_url);
+    locationVideo.setAttribute(
+      "src",
+      `${selectedLocation.video_url}?autoplay=1`
+    );
   } else {
     console.error("No location data found in sessionStorage");
   }
