@@ -27,12 +27,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.log("weaterData", weatherData);
 
     titleElement.textContent = selectedLocation.name;
+<<<<<<< HEAD
     weatherStats1.textContent = `🌡️ ${weatherData.current.apparent_temperature}°C`;
     weatherStats2.textContent = `💨 ${weatherData.current.wind_speed_10m} KM/H`;
     weatherStats3.textContent = `☁️ ${weatherData.current.cloud_cover}`;
     weatherStats4.textContent = `☔ ${weatherData.current.rain}`;
     weatherStats5.textContent = `⌚ ${weatherData.current.time}`;
     weatherStats6.textContent = `💧 ${weatherData.current.relative_humidity_2m}`;
+=======
+    weatherStats1.textContent = `${weatherData.current?.apparent_temperature}°C`;
+    weatherStats2.textContent = `${weatherData.current.wind_speed_10m}KM/H`;
+>>>>>>> 668f469ae2867edaaacedcb84323aba8021af522
     locationVideo.setAttribute("src", selectedLocation.video_url);
 
     if  (weatherData.current.apparent_temperature < 10 && weatherData.current.rain <= 0){
