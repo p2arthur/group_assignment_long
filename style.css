@@ -152,3 +152,16 @@ iframe {
   width: 100%;
   text-align: start;
 }
+
+@media (max-width: 768px) {
+    .logo{
+      width: 100%;
+      height: 100%;
+    }
+    .search{
+      margin-top: 40px;
+    }
+    .submit-button{
+      margin-top: 60px;
+    }
+  }
