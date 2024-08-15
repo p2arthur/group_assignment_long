@@ -1,0 +1,65 @@
+/* General styles */
+body {
+    background-color: #ade8f4;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Section styling */
+section {
+    background-color: #002141;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40%;
+    max-width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+    width: 90%;
+    height: 50px;
+}
+
+/* Submit button styling */
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #48cae4;
+}
+
+button:hover {
+    background-color: #0077b6;
+    color: white;
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    body {
+        background-color: #002141;
+    }
+
+    section {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+}
