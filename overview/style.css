@@ -66,11 +66,16 @@ body {
   font-size: 1.5rem;
   border-bottom: 1px solid white;
   padding: 5px;
-  transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.3s;
   user-select: none;
   cursor: pointer;
 }
-
+.weather-stats:hover {
+  transform: scale(1.1); 
+  color: #48cae4; 
+  border-bottom-color: #48cae4; 
+  text-shadow: 0 0 10px #48cae4;
+}
 .weather-stats:hover {
   scale: 105%;
 }
@@ -154,24 +159,50 @@ iframe {
 @media (max-width: 768px) {
   .main-content {
     flex-direction: column;
+    align-items: center;
   }
 
   .place-name {
-    font-size: 1.5rem;
+    font-size: 30px;
   }
 
   .weather-object {
     width: 100px;
     height: 100px;
   }
+  .right-column {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px;
+  }
+  .left-column {
+    background-color: #002141;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px;
+  }
 
   .video-container {
-    width: 90%;
+    width: 95%;
+    height: 300px;
+  }
+  .video{
+    margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 200px;
+
   }
   iframe {
     border-radius: 20px;
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     margin-left: 40px;
   }
   .location-video {
