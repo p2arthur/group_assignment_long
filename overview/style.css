@@ -71,9 +71,9 @@ body {
   cursor: pointer;
 }
 .weather-stats:hover {
-  transform: scale(1.1); 
-  color: #48cae4; 
-  border-bottom-color: #48cae4; 
+  transform: scale(1.1);
+  color: #48cae4;
+  border-bottom-color: #48cae4;
   text-shadow: 0 0 10px #48cae4;
 }
 .weather-stats:hover {
@@ -131,6 +131,7 @@ button {
   border-radius: 20px;
   background-color: #48cae4;
   transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
 }
 
 button:hover {
@@ -141,8 +142,6 @@ button:hover {
 button:active {
   transform: scale(0.95);
 }
-
-
 
 .right-column {
   width: 60%;
@@ -186,7 +185,7 @@ iframe {
     display: flex;
     width: 90%;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
   }
@@ -195,7 +194,7 @@ iframe {
     display: flex;
     width: 90%;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
   }
@@ -204,12 +203,11 @@ iframe {
     width: 95%;
     height: 300px;
   }
-  .video{
+  .video {
     margin: 0;
-  padding: 0;
-  width: 300px;
-  height: 200px;
-
+    padding: 0;
+    width: 300px;
+    height: 200px;
   }
   iframe {
     border-radius: 20px;
