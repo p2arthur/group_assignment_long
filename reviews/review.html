@@ -2,8 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
     <title>Reviews</title>
   </head>
 
@@ -12,9 +18,17 @@
       <h2>Location</h2>
       <article class="visit-place">
         <p>Have you visited this place?</p>
-        <input type="radio" name="been-there" id="been-there-yes" />
+        <input
+          type="radio"
+          name="been-there"
+          id="been-there-yes"
+        />
         <label for="been-there-yes">Yes</label>
-        <input type="radio" name="been-there" id="been-there-no" />
+        <input
+          type="radio"
+          name="been-there"
+          id="been-there-no"
+        />
         <label for="been-there-no">No</label>
       </article>
 
@@ -27,13 +41,33 @@
               visit?</strong
             >
           </p>
-          <input type="radio" id="q1-1" name="q1" value="Excellent" />
+          <input
+            type="radio"
+            id="q1-1"
+            name="q1"
+            value="Excellent"
+          />
           <label for="q1-1">Excellent</label><br />
-          <input type="radio" id="q1-2" name="q1" value="Good" />
+          <input
+            type="radio"
+            id="q1-2"
+            name="q1"
+            value="Good"
+          />
           <label for="q1-2">Good</label><br />
-          <input type="radio" id="q1-3" name="q1" value="Average" />
+          <input
+            type="radio"
+            id="q1-3"
+            name="q1"
+            value="Average"
+          />
           <label for="q1-3">Average</label><br />
-          <input type="radio" id="q1-4" name="q1" value="Poor" />
+          <input
+            type="radio"
+            id="q1-4"
+            name="q1"
+            value="Poor"
+          />
           <label for="q1-4">Poor</label><br /><br />
 
           <p>
@@ -49,9 +83,19 @@
             value="Very clean and well-maintained"
           />
           <label for="q2-1">Yes, very clean and well-maintained</label><br />
-          <input type="radio" id="q2-2" name="q2" value="Adequate" />
+          <input
+            type="radio"
+            id="q2-2"
+            name="q2"
+            value="Adequate"
+          />
           <label for="q2-2">Adequate, but could be improved</label><br />
-          <input type="radio" id="q2-3" name="q2" value="Not well-maintained" />
+          <input
+            type="radio"
+            id="q2-3"
+            name="q2"
+            value="Not well-maintained"
+          />
           <label for="q2-3">No, they were not well-maintained</label><br />
           <input
             type="radio"
@@ -66,18 +110,39 @@
               >3. Would you recommend this tourist place to others?</strong
             >
           </p>
-          <input type="radio" id="q5-1" name="q5" value="Yes, definitely" />
+          <input
+            type="radio"
+            id="q5-1"
+            name="q5"
+            value="Yes, definitely"
+          />
           <label for="q5-1">Yes, definitely</label><br />
-          <input type="radio" id="q5-2" name="q5" value="Maybe" />
+          <input
+            type="radio"
+            id="q5-2"
+            name="q5"
+            value="Maybe"
+          />
           <label for="q5-2">Maybe</label><br />
-          <input type="radio" id="q5-3" name="q5" value="No" />
+          <input
+            type="radio"
+            id="q5-3"
+            name="q5"
+            value="No"
+          />
           <label for="q5-3">No</label><br />
-          <input type="radio" id="q5-4" name="q5" value="Not sure" />
+          <input
+            type="radio"
+            id="q5-4"
+            name="q5"
+            value="Not sure"
+          />
           <label for="q5-4">Not sure yet</label><br /><br />
           <article class="review">
             <h2>Please, leave your review</h2>
             <input
-              type="text"
+              required
+              type="textbox"
               class="review-text"
               name="review"
               placeholder="Write your review here!"
@@ -91,33 +156,6 @@
       </article>
     </section>
 
-    <script>
-      document
-        .getElementById("reviewForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevent form from submitting
-
-          // Read values from form
-          const beenThere =
-            document.querySelector('input[name="been-there"]:checked')
-              ?.nextElementSibling.innerText || "No answer";
-          const q1 =
-            document.querySelector('input[name="q1"]:checked')?.value ||
-            "No answer";
-          const q2 =
-            document.querySelector('input[name="q2"]:checked')?.value ||
-            "No answer";
-          const q5 =
-            document.querySelector('input[name="q5"]:checked')?.value ||
-            "No answer";
-          const reviewText =
-            document.querySelector(".review-text").value || "No review";
-
-          // Display a thank you pop-up message
-          alert(
-            `Thank you for your feedback!\n\nYour Responses:\n- Visited this place: ${beenThere}\n- Overall experience: ${q1}\n- Facilities: ${q2}\n- Recommendation: ${q5}\n- Review: ${reviewText}`
-          );
-        });
-    </script>
+    <script src="reviews.js"></script>
   </body>
 </html>
