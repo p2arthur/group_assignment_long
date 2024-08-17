@@ -25,7 +25,7 @@ export const locations = [
     video_url: "https://www.youtube.com/embed/mwG8G4F1wPU",
   },
   {
-    name: "VancolocationData.jsuver, British Columbia, Canada",
+    name: "Vancouver, British Columbia, Canada",
     location: { lat: 49.26, long: -123.11 },
     video_url: "https://www.youtube.com/embed/Tw7xjEfJBbA",
   },
